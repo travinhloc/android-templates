@@ -31,7 +31,7 @@ end
   
 # TODO: Update to support test coverage report from Jacoco for Coroutine Template
 # Show Danger test coverage report from Jacoco for RxJavaTemplate
-jacoco_dir = "RxJavaTemplate/**/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml"
+jacoco_dir = "RxJavaTemplate[DEPRECATED]/**/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml"
 markdown "## RxJavaTemplate Jacoco report:"
 Dir[jacoco_dir].each do |file_name|
   # Report coverage of modified files, warn if total project coverage is under 80%

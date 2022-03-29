@@ -34,11 +34,11 @@ jobs:
         run: ./gradlew detekt
 
       - name: Run Detekt on RxJavaTemplate
-        working-directory: ./RxJavaTemplate
+        working-directory: "./RxJavaTemplate[DEPRECATED]"
         run: ./gradlew detekt
 
       - name: Run Android Lint on RxJavaTemplate
-        working-directory: ./RxJavaTemplate
+        working-directory: "./RxJavaTemplate[DEPRECATED]"
         run: ./gradlew lint
 
       - name: Run Android Lint on CoroutineTemplate
@@ -47,7 +47,7 @@ jobs:
 
       # TODO: Update to support test coverage reports from Jacoco for CoroutineTemplate
       - name: Run unit tests and Jacoco on RxJavaTemplate
-        working-directory: ./RxJavaTemplate
+        working-directory: "./RxJavaTemplate[DEPRECATED]"
         run: ./gradlew jacocoTestReport
 
       - name: Set up Ruby
